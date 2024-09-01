@@ -1,6 +1,6 @@
 from fastapi import FastAPI, File, UploadFile, Depends, HTTPException
 from sqlalchemy.orm import Session
-from .database import get_db, engine, Base
+from database import get_db, engine, Base
 from .models import ImageProcessingRequest
 from .schemas import ImageRequestCreate, ImageRequestStatus
 from .utils import generate_request_id
